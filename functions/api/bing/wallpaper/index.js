@@ -8,7 +8,7 @@ export async function onRequest(context) {
       next, // used for middleware or to fetch assets
       data, // arbitrary space for passing data between middlewares
     } = context;
-    const res = await fetch(`https://www.dmoe.cc/random.php`);
+    const res = await fetch(`https://www.dmoe.cc/random.php?return=json`);
     const bing_data = type=json();
     const return_data={
         "status":true,
